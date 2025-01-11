@@ -1,0 +1,15 @@
+{
+    "terminal.integrated.allowChords": false,
+    "files.exclude": {
+        "**/vendor/": true
+    },
+    "files.watcherExclude": {
+        "**/vendor/": true,
+        "**/target": true
+    },
+    "search.exclude": {
+        "**/.devcontainer": true,
+        "**/.vscode": true,
+        "**/vendor/": true
+    },
+}

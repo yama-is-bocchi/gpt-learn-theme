@@ -1,0 +1,15 @@
+{
+    "useGitignore": true,
+    "ignorePaths": [
+        "**/.devcontainer/**",
+        "**/.git/objects/**",
+        "**/.vscode/**",
+        "**/*.log",
+        "**/*.sh",
+        "**/Dockerfile"
+    ],
+    "words": [
+        "devcontainer",
+        "sbtuser"
+    ]
+}
