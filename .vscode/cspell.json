@@ -6,10 +6,12 @@
         "**/.vscode/**",
         "**/*.log",
         "**/*.sh",
-        "**/Dockerfile"
+        "**/Dockerfile",
+        "**/build.sbt",
     ],
     "words": [
         "devcontainer",
-        "sbtuser"
+        "sbtuser",
+        "ensime"
     ]
 }

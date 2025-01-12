@@ -1,5 +1,15 @@
-@main def hello(): Unit =
-  println("Hello world!")
-  println(msg)
+def getPatternMatch(target: String): String = {
+  target match
+    case "hello"=>"Hi there!"
+    case "bye"=>"Goodbye!"
+    case _ => target.toIntOption match
+      case Some(value)=> (value * 2).toString()
+      case None  => "Unknown input"
+}
 
-def msg = "I was compiled by Scala 3. :)"
+@main def main(): Unit = {
+  println(getPatternMatch("hello"))
+  println(getPatternMatch("bye"))
+  println(getPatternMatch("100"))
+  println(getPatternMatch("how are you?"))
+}
