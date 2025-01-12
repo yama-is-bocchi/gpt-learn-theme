@@ -8,5 +8,14 @@
   println(numList.filter(num => num % 2 == 0))
   // リストのすべての要素の合計を計算。
   println(numList.sum)
-
+  // *** マップ操作 ***
+  // 学生の名前と成績をマッピングするマップを作成（例: Map("Alice" -> 85, "Bob" -> 90)）。
+  val students =
+    Map("Alice" -> 85, "Bob" -> 90, "Charlotte" -> 95, "Daniel" -> 100)
+  // すべての成績に+5点加算した新しいマップを生成。
+  println(students.flatMap { case (name, score) =>
+    List((name, score), (name, score + 5))
+  })
+  // 成績が90点以上の学生の名前をリストで取得。
+  println(students.collect { case (name, score) if score >= 90 => name })
 }
